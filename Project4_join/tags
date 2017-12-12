@@ -1,0 +1,199 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADDR_NOT_EXIST	bptree.h	19;"	d
+ALIGNED	bptree.h	227;"	d
+ALIGN_DOWN	bptree.h	229;"	d
+ALIGN_UP	bptree.h	228;"	d
+AR	Makefile	/^AR=ar$/;"	m
+B	bptree.h	230;"	d
+BLOCK_SIZE	config.h	1;"	d
+BPTREE_H	bptree.h	2;"	d
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS= -g --std=c99 -O0 -Wall$/;"	m
+DEC_RET	bptree.h	221;"	d
+DEF_DB_MODE	config.h	3;"	d
+E_DUP	bptree.h	16;"	d
+E_FULL_TABLE	bptree.h	17;"	d
+E_NOT_FOUND	bptree.h	15;"	d
+E_OK	bptree.h	14;"	d
+HPAGE_NUM	bptree.h	18;"	d
+INT_ORDER	config.h	11;"	d
+LDFLAGS	Makefile	/^LDFLAGS= $/;"	m
+LEAF_ORDER	config.h	10;"	d
+MAX_TABLE	config.h	8;"	d
+NAME	Makefile	/^NAME=bpt$/;"	m
+NUM_INT_KEY	config.h	6;"	d
+NUM_LEAF_REC	config.h	5;"	d
+OBJS	Makefile	/^OBJS=bpt_ext.o buf.o conn.o delete.o disk.o helper.o insert.o table.o join.o$/;"	m
+OUT_LIB	Makefile	/^OUT_LIB=lib$(NAME).a$/;"	m
+OUT_TEST	Makefile	/^OUT_TEST=test$/;"	m
+RET	bptree.h	222;"	d
+VALUE_SIZE	config.h	7;"	d
+_GNU_SOURCE	bptree.h	3;"	d
+addr	bptree.h	/^typedef uint64_t addr;$/;"	t
+adjust_root	delete.c	/^int adjust_root(table *t, npage *root) {$/;"	f
+alloc_block	disk.c	/^addr alloc_block(table *t){$/;"	f
+alloc_hpage	helper.c	/^hpage *alloc_hpage(table *t){$/;"	f
+alloc_page	buf.c	/^page *alloc_page(table *t, addr ad){$/;"	f
+b	bptree.h	/^	fblock *b;$/;"	m	struct:fpage
+b	bptree.h	/^	hblock *b;$/;"	m	struct:hpage
+b	bptree.h	/^	jblock *b;$/;"	m	struct:jpage
+b	bptree.h	/^	nblock *b;$/;"	m	struct:npage
+b	bptree.h	/^	void *b;$/;"	m	struct:page
+bfm	bptree.h	/^	bufmgr *bfm;$/;"	m	struct:conn
+bm	bptree.h	/^	bmgr bm;$/;"	m	struct:table
+bmgr	bptree.h	/^typedef struct bmgr{$/;"	s
+bmgr	bptree.h	/^} bmgr;$/;"	t	typeref:struct:bmgr
+bufmgr	bptree.h	/^typedef struct bufmgr{$/;"	s
+bufmgr	bptree.h	/^} bufmgr;$/;"	t	typeref:struct:bufmgr
+c	bpt_ext.c	/^static conn c;$/;"	v	file:
+c	bptree.h	/^	struct conn *c;$/;"	m	struct:table	typeref:struct:table::conn
+child	bptree.h	/^typedef struct child{$/;"	s
+child	bptree.h	/^} child;$/;"	t	typeref:struct:child
+children	bptree.h	/^		child children[NUM_INT_KEY];$/;"	m	union:nblock::__anon2
+close_bufmgr	buf.c	/^void close_bufmgr(conn *c){$/;"	f
+close_conn	conn.c	/^int close_conn(conn *c){$/;"	f
+close_file	disk.c	/^void close_file(table *t){$/;"	f
+close_table	bpt_ext.c	/^int close_table(int table_id){$/;"	f
+close_table_low	table.c	/^void close_table_low(table *t){$/;"	f
+coalesce_nodes	delete.c	/^int coalesce_nodes(table *t, npage *np, npage *neighbor, int neighbor_index, int k_prime) {$/;"	f
+conn	bptree.h	/^typedef struct conn{$/;"	s
+conn	bptree.h	/^} conn;$/;"	t	typeref:struct:conn
+cut	helper.c	/^int cut( int length ) {$/;"	f
+delete	bpt_ext.c	/^int delete(int table_id, int64_t key){$/;"	f
+delete_entry	delete.c	/^int delete_entry(table *t, npage *np, int64_t k, int idx){$/;"	f
+delete_low	delete.c	/^int delete_low(table *t, int64_t k) {$/;"	f
+evict_page	buf.c	/^page *evict_page(table *t){$/;"	f
+extend_file	disk.c	/^void extend_file(table *t, hpage *hp){$/;"	f
+fblock	bptree.h	/^typedef struct fblock{$/;"	s
+fblock	bptree.h	/^} fblock;$/;"	t	typeref:struct:fblock
+fd	bptree.h	/^	int fd;$/;"	m	struct:bmgr
+find	bpt_ext.c	/^char *find(int table_id, int64_t key){$/;"	f
+find_leaf	helper.c	/^npage *find_leaf(table *t, const int64_t k) {$/;"	f
+find_low	helper.c	/^int find_low(table *t, const int64_t k, record *r){$/;"	f
+find_rec	helper.c	/^int find_rec(table *t, npage *np, const int64_t k){$/;"	f
+flush_page	buf.c	/^void flush_page(table *t){$/;"	f
+fpage	bptree.h	/^typedef struct fpage{$/;"	s
+fpage	bptree.h	/^} fpage;$/;"	t	typeref:struct:fpage
+free	bptree.h	/^	addr free; \/\/ 8$/;"	m	struct:hblock
+free_block	disk.c	/^void free_block(table *t, void *b){$/;"	f
+get_child	helper.c	/^npage *get_child(table *t, npage *np, int idx){$/;"	f
+get_fpage	helper.c	/^fpage *get_fpage(table *t, addr ad){$/;"	f
+get_hpage	helper.c	/^hpage *get_hpage(table *t){$/;"	f
+get_left_index	insert.c	/^int get_left_index(npage *parent, npage *left) {$/;"	f
+get_neighbor_index	delete.c	/^int get_neighbor_index(table *t, npage *np, npage *parent) {$/;"	f
+get_npage	helper.c	/^npage *get_npage(table *t, addr ad){$/;"	f
+get_page	buf.c	/^page *get_page(table *t, addr ad){$/;"	f
+get_parent	helper.c	/^npage *get_parent(table *t, npage *np){$/;"	f
+get_root	helper.c	/^npage *get_root(table *t){$/;"	f
+hblock	bptree.h	/^typedef struct hblock{$/;"	s
+hblock	bptree.h	/^} hblock;$/;"	t	typeref:struct:hblock
+hpage	bptree.h	/^typedef struct hpage{$/;"	s
+hpage	bptree.h	/^} hpage;$/;"	t	typeref:struct:hpage
+i_children	bptree.h	66;"	d
+i_leftmost	bptree.h	64;"	d
+init_bufmgr	buf.c	/^int init_bufmgr(conn *c, int buf_num){$/;"	f
+init_db	bpt_ext.c	/^int init_db(uint64_t num_buf){$/;"	f
+insert	bpt_ext.c	/^int insert(int table_id, int64_t key, char *value){$/;"	f
+insert_into_leaf	insert.c	/^int insert_into_leaf(table *t, npage *leaf, const record *r){$/;"	f
+insert_into_leaf_after_splitting	insert.c	/^int insert_into_leaf_after_splitting(table *t, npage *np, record *r) {$/;"	f
+insert_into_new_root	insert.c	/^int insert_into_new_root(table *t, npage *left, int64_t k, npage *right) {$/;"	f
+insert_into_node	insert.c	/^int insert_into_node(table *t, npage *np, $/;"	f
+insert_into_node_after_splitting	insert.c	/^int insert_into_node_after_splitting(table *t, npage *np, int left_index, $/;"	f
+insert_into_parent	insert.c	/^int insert_into_parent(table *t, npage *left, int64_t k, npage *right) {$/;"	f
+insert_low	insert.c	/^int insert_low( table *t, record *r) {$/;"	f
+is_dirty	bptree.h	/^	int is_dirty;$/;"	m	struct:page
+is_leaf	bptree.h	/^	int is_leaf; \/\/ 4$/;"	m	struct:nblock
+is_used	bptree.h	/^	bool is_used; \/\/ False when the page is not used from the beginning$/;"	m	struct:page
+is_used	bptree.h	/^	bool is_used;$/;"	m	struct:table
+jblock	bptree.h	/^typedef struct jblock {$/;"	s
+jblock	bptree.h	/^} jblock;$/;"	t	typeref:struct:jblock
+join_set	bptree.h	/^typedef struct join_set {$/;"	s
+join_set	bptree.h	/^} join_set;$/;"	t	typeref:struct:join_set
+join_sets	bptree.h	/^	join_set join_sets[16];$/;"	m	struct:jblock
+join_table	bpt_ext.c	/^int join_table(int table_id_1, int table_id_2, char* pathname) {$/;"	f
+join_table_low	join.c	/^int join_table_low(table* t_1, table* t_2, table* t_join) {$/;"	f
+jpage	bptree.h	/^typedef struct jpage {$/;"	s
+jpage	bptree.h	/^} jpage;$/;"	t	typeref:struct:jpage
+k	bptree.h	/^	int64_t k;$/;"	m	struct:child
+k	bptree.h	/^	int64_t k;$/;"	m	struct:record
+key1	bptree.h	/^	int64_t key1;$/;"	m	struct:join_set
+key2	bptree.h	/^	int64_t key2;$/;"	m	struct:join_set
+l_recs	bptree.h	67;"	d
+l_sib	bptree.h	65;"	d
+leftmost	bptree.h	/^		addr leftmost;$/;"	m	union:nblock::__anon1
+lru_head	bptree.h	/^	page *lru_head;$/;"	m	struct:bufmgr
+lru_next	bptree.h	/^	struct page *lru_next;$/;"	m	struct:page	typeref:struct:page::page
+lru_prev	bptree.h	/^	struct page *lru_prev;$/;"	m	struct:page	typeref:struct:page::page
+lru_tail	bptree.h	/^	page *lru_tail;$/;"	m	struct:bufmgr
+main	test.c	/^int main(void) {$/;"	f
+make_leaf	insert.c	/^npage *make_leaf(table *t){$/;"	f
+make_node	insert.c	/^npage *make_node(table *t){$/;"	f
+nblock	bptree.h	/^typedef struct nblock{$/;"	s
+nblock	bptree.h	/^} nblock;$/;"	t	typeref:struct:nblock
+next	bptree.h	/^	addr next; \/\/8$/;"	m	struct:fblock
+npage	bptree.h	/^typedef struct npage{$/;"	s
+npage	bptree.h	/^} npage;$/;"	t	typeref:struct:npage
+num_buf	bptree.h	/^	uint64_t num_buf;$/;"	m	struct:bufmgr
+num_keys	bptree.h	/^	int num_keys; \/\/ 4$/;"	m	struct:nblock
+num_page	bptree.h	/^	uint64_t num_page; \/\/ 8$/;"	m	struct:hblock
+offset	bptree.h	/^	addr offset;$/;"	m	struct:fpage
+offset	bptree.h	/^	addr offset;$/;"	m	struct:hpage
+offset	bptree.h	/^	addr offset;$/;"	m	struct:jpage
+offset	bptree.h	/^	addr offset;$/;"	m	struct:npage
+offset	bptree.h	/^	addr offset;$/;"	m	struct:page
+open_conn	conn.c	/^int open_conn(conn *c, int buf_num){$/;"	f
+open_file	disk.c	/^int open_file(conn *c, const char *file_path){$/;"	f
+open_table	bpt_ext.c	/^int open_table(char *pathname){$/;"	f
+open_table_low	table.c	/^int open_table_low(conn *c, const char *pathname){$/;"	f
+pad	bptree.h	/^	uint8_t pad[104]; \/\/ 104$/;"	m	struct:nblock
+pad	bptree.h	/^	uint8_t pad[4072];$/;"	m	struct:hblock
+pad	bptree.h	/^	uint8_t pad[4088];$/;"	m	struct:fblock
+page	bptree.h	/^typedef struct page{$/;"	s
+page	bptree.h	/^} page;$/;"	t	typeref:struct:page
+pages	bptree.h	/^	page *pages;$/;"	m	struct:bufmgr
+panic	helper.c	/^void panic(const char *str){$/;"	f
+parent	bptree.h	/^	addr parent; \/\/8$/;"	m	struct:nblock
+pincnt	bptree.h	/^	int pincnt;$/;"	m	struct:page
+pop_from_lru	buf.c	/^void pop_from_lru(table *t, page *p){$/;"	f
+print_tree	helper.c	/^void print_tree(table *t) {$/;"	f
+push_to_lru	buf.c	/^void push_to_lru(table *t, page *p){$/;"	f
+read_block	disk.c	/^void read_block(table *t, void *p, addr ad){$/;"	f
+read_page	bptree.h	232;"	d
+record	bptree.h	/^typedef struct record{$/;"	s
+record	bptree.h	/^} record;$/;"	t	typeref:struct:record
+recs	bptree.h	/^		record recs[NUM_LEAF_REC];$/;"	m	union:nblock::__anon2
+redistribute_nodes	delete.c	/^int redistribute_nodes(table *t, npage *np, npage *neighbor, int neighbor_index, $/;"	f
+release_page	bptree.h	243;"	d
+remove_entry_from_node	delete.c	/^int remove_entry_from_node(table *t, npage *np, int64_t k, int idx){$/;"	f
+root	bptree.h	/^	addr root; \/\/ 8$/;"	m	struct:hblock
+set_dirty	bptree.h	235;"	d
+set_dirty_f	bptree.h	239;"	d
+set_root	insert.c	/^void set_root(table *t, npage *np){$/;"	f
+shutdown_db	bpt_ext.c	/^int shutdown_db(){$/;"	f
+sib	bptree.h	/^		addr sib;$/;"	m	union:nblock::__anon1
+start_new_tree	insert.c	/^int start_new_tree(table *t, record *r) {$/;"	f
+table	bptree.h	/^typedef struct table{$/;"	s
+table	bptree.h	/^} table;$/;"	t	typeref:struct:table
+table_id	bptree.h	/^	int table_id;$/;"	m	struct:fpage
+table_id	bptree.h	/^	int table_id;$/;"	m	struct:hpage
+table_id	bptree.h	/^	int table_id;$/;"	m	struct:jpage
+table_id	bptree.h	/^	int table_id;$/;"	m	struct:npage
+table_id	bptree.h	/^	int table_id;$/;"	m	struct:page
+table_id	bptree.h	/^	int table_id;$/;"	m	struct:table
+tbls	bptree.h	/^	table tbls[MAX_TABLE];$/;"	m	struct:conn
+tot_pincnt	bptree.h	/^	int tot_pincnt;$/;"	m	struct:bufmgr
+u1	bptree.h	/^	}u1;$/;"	m	struct:nblock	typeref:union:nblock::__anon1
+u2	bptree.h	/^	}u2;$/;"	m	struct:nblock	typeref:union:nblock::__anon2
+update_lru	bptree.h	248;"	d
+v	bptree.h	/^	addr v;$/;"	m	struct:child
+v	bptree.h	/^	char v[VALUE_SIZE];$/;"	m	struct:record
+v1	bptree.h	/^	char v1[VALUE_SIZE];$/;"	m	struct:join_set
+v2	bptree.h	/^	char v2[VALUE_SIZE];$/;"	m	struct:join_set
+write_block	disk.c	/^void write_block(table *t, void *b, addr ad){$/;"	f
+write_page	bptree.h	233;"	d
+write_result	join.c	/^void write_result(table * t, jpage* join_result, int count, int64_t key,$/;"	f
